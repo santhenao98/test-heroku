@@ -256,10 +256,11 @@ public class BuildEmailService {
 				"                <tr style=\"background-color:#ffffff;\">\r\n" + 
 				"                    <td class=\"two-column\"\r\n" + 
 				"                        style=\"padding-top:25px;padding-right:0;padding-bottom:25px;padding-left:0;text-align:center;font-size:0;vertical-align:middle;\">\r\n" + 
-				"                        <p\r\n" + 
-				"                            style=\"margin-top:0px;margin-right:10px;margin-bottom:20px;margin-left:10px;font-family:Arial;font-size:16px;color:#142649;text-align:center;\">\r\n" + 
-				"                            <b><%BODY%></p>\r\n" + 
-				"							<b>Numero de puntos: <%PUNTOS%></p>\r\n" + 
+				"                        <p style=\"margin-top:0px;margin-right:10px;margin-bottom:20px;margin-left:10px;font-family:Arial;font-size:16px;color:#142649;text-align:center;\">\r\n" + 
+				"                            <b><%BODY%></b>\r\n" + 
+				"							<b>Número de puntos: <%PUNTOS%></b>\r\n" + 
+				"						</p>\r\n" + 
+				"							\r\n" + 
 				"                        </td>\r\n" + 
 				"                </tr>\r\n" + 
 				"                <!-- End info-->\r\n" + 
