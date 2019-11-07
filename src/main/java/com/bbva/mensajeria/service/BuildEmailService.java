@@ -34,8 +34,7 @@ public class BuildEmailService {
 	public void buildEmail(EmailModel emailModel)
 			throws MailException, MessagingException, IOException, URISyntaxException {
 
-		emailModel.setBody(getBodyQuemado().replace("<%BODY%>",emailModel.getBody()));
-		emailModel.setBody(getBodyQuemado().replace("<%PUNTOS%>",emailModel.getPoints()));
+		emailModel.setBody(getBodyQuemado().replace("<%BODY%>",emailModel.getBody()).replace("<%PUNTOS%>",emailModel.getPoints()));
 		
 		for (String email : emailModel.getReceiverEmail()) {
 			emailSimpleModel.setReceiverEmail(email);
