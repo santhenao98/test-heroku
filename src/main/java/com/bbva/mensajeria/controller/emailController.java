@@ -18,7 +18,7 @@ import com.bbva.mensajeria.model.EmailModel;
 import com.bbva.mensajeria.service.BuildEmailService;
 
 @RestController
-@RequestMapping(value = "/CustomerLakeNotification")
+@RequestMapping(value = "/customerLaekNotification")
 public class emailController {
 
 	/*
@@ -29,7 +29,7 @@ public class emailController {
 	@Autowired
 	private BuildEmailService buildEmailService;
 
-	@RequestMapping(value = "/send", method = RequestMethod.POST)
+	@RequestMapping(value = "/sendEmail", method = RequestMethod.POST)
 	public ResponseEntity persistPerson(@RequestBody EmailModel emailModel)
 			throws MailException, MessagingException, IOException, URISyntaxException {
 

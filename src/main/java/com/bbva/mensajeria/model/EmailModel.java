@@ -22,12 +22,23 @@ public class EmailModel {
 
 
 	private String body;
+	private String points;
 	private List<String> receiverEmail;
+	
 	public String getBody() {
 		return body;
 	}
 	public void setBody(String body) {
 		this.body = body;
+	}
+	
+	
+	
+	public String getPoints() {
+		return points;
+	}
+	public void setPoints(String points) {
+		this.points = points;
 	}
 	public List<String> getReceiverEmail() {
 		return receiverEmail;

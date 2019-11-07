@@ -1,11 +1,7 @@
 package com.bbva.mensajeria.service;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import java.nio.charset.Charset;
-import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
 
 import javax.mail.MessagingException;
 
@@ -48,22 +44,7 @@ public class BuildEmailService {
 			sendEmailService.buildEmail(emailSimpleModel);
 		}
 
-	}
-
-	public static String readTemplateHTML(String path, Charset encoding) throws IOException, URISyntaxException {
-		
-		ClassLoader classLoader = new BuildEmailService().getClass().getClassLoader();
-
-		File file = new File(classLoader.getResource(path).getFile());
-		
-		//File is found
-        System.out.println("File Found : " + file.exists());
-
-		byte[] encoded = Files.readAllBytes(file.toPath());
-
-		return new String(encoded, encoding);
-	}
-	
+	}	
 	
 	private String getBodyQuemado() {
 		return "<!DOCTYPE html\r\n" + 
