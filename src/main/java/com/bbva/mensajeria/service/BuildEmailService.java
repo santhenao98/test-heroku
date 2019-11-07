@@ -259,7 +259,7 @@ public class BuildEmailService {
 				"                        <p\r\n" + 
 				"                            style=\"margin-top:0px;margin-right:10px;margin-bottom:20px;margin-left:10px;font-family:Arial;font-size:16px;color:#142649;text-align:center;\">\r\n" + 
 				"                            <b><%BODY%></p>\r\n" + 
-				"							<b>Número de puntos: <%PUNTOS%></p>\r\n" + 
+				"							<b>Numero de puntos: <%PUNTOS%></p>\r\n" + 
 				"                        </td>\r\n" + 
 				"                </tr>\r\n" + 
 				"                <!-- End info-->\r\n" + 
